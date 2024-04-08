@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson Jones - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Carson Jones</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./blog/blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Carson Jones</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="./blog/blog.html" onclick="toggleMenu()">Blog</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" 
+            alt="Carson Jones Photo" 
+            class="profile-pic"
+            >
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Meet</p>
+            <h1>Carson Jones</h1>
+            <p class="section__text__p2">Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">Connect with Carson</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="LinkedIn Profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/carson-jones-b44399276/'"
+                />
+                <img src="./assets/github.png" 
+                alt="LinkedIn Profile"
+                class="icon" 
+                onclick="location.href='https://github.com/iJonezi'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">View My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div id="projects-container">
+            
+        </div>
+    </section>
+</section>
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img
+        src="./assets/about-pic.jpg"
+        alt="Carson Jones"
+        class="about-pic"
+      />
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img
+            src="./assets/experience.png"
+            alt="Experience icon"
+            class="icon"
+          />
+          <h3>Experience</h3>
+          <p>2+ years <br />Fullstack Development</p>
+        </div>
+        <div class="details-container">
+          <img
+            src="./assets/education.png"
+            alt="Education icon"
+            class="icon"
+          />
+          <h3>Education</h3>
+          <p>B.Sc. Software Engineering<br />
+            Western Governors University</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          Hello! Welcome to my page. Here, I showcase my achievements as a Software Engineer, the things
+          I have learned from my individual projects, as well as some career information about me. Growing up,
+          I was fascinated by technology and desired to learn more. I decided to venture into programming when
+          I was 14 years old playing a game called Garry's Mod. There, I learned my first programming language, Lua.
+          Since then, I was hooked on development in it's entirety and eventually tried different languages.<br>
+            <br>
+          I have been a developer for several gaming communities to include communities on Garry's Mod, FiveM/RedM,
+          Arma 3, to where I am now, outside from games, working with the State of Alaska. In my day to day,
+          I develope, test, and maintain network systems, computing systems, and programs written by me.<br>
+            <br>
+          Feel free to connect with me on LinkedIn or send me an email if you'd like to learn more, or are 
+          interested in having me work with you!
+        </p>
+      </div>
+    </div>
+  </div>
+        <img src="./assets/arrow.png" 
+        alt="Continue Scrolling"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+        >
+</section>
+<section id="contact">
+    <p class="section__text__p1">How To</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper">
+        <div class="info-container">
+            <img src="./assets/email.png" 
+            alt="email icon"
+            class="icon contact-icon">
+            <p><a href="mailto:jonescarson08@gmail.com">jonescarson08@gmail.com</a></p>
+        </div>
+        <div class="info-container">
+            <img src="./assets/linkedin.png" 
+            alt="linkedIn icon"
+            class="icon contact-icon2">
+            <p><a href="https://www.linkedin.com/in/carson-jones-b44399276/">LinkedIn</a></p>
+        </div>
+    </div>  
+</section>
+<footer class="footer-main">
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./blog/blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2023 Carson Jones. All Rights Reserved</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

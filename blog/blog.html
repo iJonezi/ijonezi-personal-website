@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson Jones - Blog</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../media.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Carson Jones</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Return to Homepage</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Carson Jones</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../index.html" onclick="toggleMenu()">Return to Homepage</a></li>
+            </div>
+        </div>
+    </nav>
+    <section class="blog-container">
+        <div>
+            <div class="blog-post">
+                <h1 class="blog-post-title">Meet Carson!</h1>
+                <img src="../assets/about-pic.jpg" 
+                alt="Picture of Carson"
+                class="blog-post-img">
+                <p class="blog-post-text">
+                        Hello! Welcome to my page. Here, I showcase my achievements as a Software Engineer, the things
+                        I have learned from my individual projects, as well as some career information about me. Growing up,
+                        I was fascinated by technology and desired to learn more. I decided to...<br><br>
+
+                        <button class="btn btn-color-1" onclick="location.href='./blog-meet_carson.html'">Read More</button><br><br>
+
+                        Posted 4/8/2024                    
+                </p>
+            </div>                  
+        </div>
+    </section>
+    <div>
+        <footer class="blog-footer">
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Return to Homepage</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 Carson Jones. All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
