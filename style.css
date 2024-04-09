@@ -389,3 +389,11 @@ footer p {
 .blog-post-text {
     padding: 1rem;
 }
+
+
+/* to be removed later */
+.project-placeholder {
+    display: flex;
+    text-align: center;
+    margin: 2rem;
+}
